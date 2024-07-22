@@ -4,6 +4,8 @@ import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 import {Input} from "@/components/input/Input";
 import {KeyboardAwareScrollView} from "react-native-keyboard-aware-scroll-view";
+import { Link } from 'expo-router';
+
 
 export default function TabOneScreen() {
   return (
@@ -18,6 +20,7 @@ export default function TabOneScreen() {
           placeholder="Username"
           onChangeText={(text) => console.log(text)}
       />
+        <Link href={'/login'}>Login screen</Link>
       <Input
           iconRight="search"
           placeholder="Search"

@@ -36,7 +36,7 @@ export function Input(props: InputProps) {
         <View style={[styles.container, { backgroundColor }]}>
             {iconLeft && (
                 iconLeftAction ? (
-                    <Pressable onPress={iconLeftAction}>
+                    <Pressable testID="testID" onPress={iconLeftAction}>
                         <Icon name={iconLeft} size={20} style={[styles.icon, iconLeftStyle]} color={textColor} />
                     </Pressable>
                 ) : (
@@ -51,7 +51,7 @@ export function Input(props: InputProps) {
             {iconRight && (
                 iconRightAction ? (
                     <Pressable onPress={iconRightAction}>
-                        <Icon name={iconRight} size={20} style={[styles.icon, iconRightStyle]} color={textColor} />
+                        <Icon  name={iconRight} size={20} style={[styles.icon, iconRightStyle]} color={textColor} />
                     </Pressable>
                 ) : (
                     <Icon name={iconRight} size={20} style={[styles.icon, iconRightStyle]} color={textColor} />
